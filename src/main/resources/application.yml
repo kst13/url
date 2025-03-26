@@ -2,6 +2,7 @@ spring:
   application:
     name: url
 
+
   datasource:
     url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     driver-class-name: org.h2.Driver
@@ -12,3 +13,12 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: update
+
+  data:
+    redis:
+      host: localhost
+      port: 16379
+
+server:
+  servlet:
+    context-path: /url

@@ -1,0 +1,13 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+### ShortUrl 생성
+POST http://localhost:8080/url/create
+Content-Type: text/plain
+
+https://chatgpt.com/g/g-p-67cd589ca3d08191936d0bab0408f84f-url-service/c/67e398c5-db18-800c-be87-428e65f1ba4e
+
+
+### SHortUrl 조회
+GET http://localhost:8080/url/get?code=8i2Q7Tm9U2q

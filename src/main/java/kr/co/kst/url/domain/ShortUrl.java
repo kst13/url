@@ -27,4 +27,12 @@ public class ShortUrl {
 
         return new ShortUrl(code, url);
     }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public String getCode() {
+        return code;
+    }
 }
