@@ -10,4 +10,4 @@ https://chatgpt.com/g/g-p-67cd589ca3d08191936d0bab0408f84f-url-service/c/67e398c
 
 
 ### SHortUrl 조회
-GET http://localhost:8080/url/get?code=8i2Q7Tm9U2q
+GET http://localhost:8080/url/get?code=8i2XzuEGb9U
