@@ -33,6 +33,7 @@ URL 키를 충돌 없이 생성하는 방법은?
 💡 보완할 기술 스택  
 ✅ Redis 캐싱 적용 (성능 최적화)  
 ✅ Kafka 이벤트 처리 (대량 트래픽을 고려한 비동기 아키텍처)  
+docker run --rm bitnami/kafka:latest kafka-storage.sh random-uuid
 ✅ CQRS + 이벤트 소싱 적용 (읽기/쓰기 분리)  
 ✅ Docker + Kubernetes 기반 배포  
 ✅ AWS S3/CloudFront 연동하여 분석 대시보드 구축  

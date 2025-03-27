@@ -7,10 +7,13 @@ spring:
     name: url
 
   datasource:
-    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
+    hikari:
+      jdbc-url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+      driver-class-name: org.h2.Driver
+      username: sa
+      maximum-pool-size: 100
+      minimum-idle: 20
+      connection-timeout: 3000
 
   h2:
     console:
@@ -27,3 +30,9 @@ spring:
       host: localhost
       port: 16379
 
+
+logging:
+  level:
+    root: INFO
+  file:
+    name: logs/app.log
