@@ -1,0 +1,664 @@
+2025-03-31T11:05:35.277+09:00  INFO 43420 --- [url] [restartedMain] kr.co.kst.url.UrlApplication             : Starting UrlApplication using Java 21.0.2 with PID 43420 (C:\kst\url\build\classes\java\main started by osstem in C:\kst\url)
+2025-03-31T11:05:35.280+09:00  INFO 43420 --- [url] [restartedMain] kr.co.kst.url.UrlApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-03-31T11:05:35.361+09:00  INFO 43420 --- [url] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-31T11:05:35.361+09:00  INFO 43420 --- [url] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-31T11:05:36.764+09:00  INFO 43420 --- [url] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-31T11:05:36.766+09:00  INFO 43420 --- [url] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-31T11:05:36.954+09:00  INFO 43420 --- [url] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 176 ms. Found 1 JPA repository interface.
+2025-03-31T11:05:36.976+09:00  INFO 43420 --- [url] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-31T11:05:36.977+09:00  INFO 43420 --- [url] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-31T11:05:36.998+09:00  INFO 43420 --- [url] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.kst.url.domain.ShortUrlRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-31T11:05:36.998+09:00  INFO 43420 --- [url] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-03-31T11:05:37.837+09:00  INFO 43420 --- [url] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-31T11:05:37.853+09:00  INFO 43420 --- [url] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-31T11:05:37.854+09:00  INFO 43420 --- [url] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-31T11:05:37.973+09:00  INFO 43420 --- [url] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/url]    : Initializing Spring embedded WebApplicationContext
+2025-03-31T11:05:37.973+09:00  INFO 43420 --- [url] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2610 ms
+2025-03-31T11:05:38.175+09:00  INFO 43420 --- [url] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-31T11:05:38.262+09:00  INFO 43420 --- [url] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-31T11:05:38.301+09:00  INFO 43420 --- [url] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-31T11:05:38.634+09:00  INFO 43420 --- [url] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-31T11:05:38.670+09:00  INFO 43420 --- [url] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-31T11:05:38.912+09:00  INFO 43420 --- [url] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-03-31T11:05:38.916+09:00  INFO 43420 --- [url] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-31T11:05:38.951+09:00  WARN 43420 --- [url] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-31T11:05:38.982+09:00  INFO 43420 --- [url] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-31T11:05:40.068+09:00  INFO 43420 --- [url] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-31T11:05:40.143+09:00  INFO 43420 --- [url] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-31T11:05:40.891+09:00  WARN 43420 --- [url] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-31T11:05:41.245+09:00  INFO 43420 --- [url] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-03-31T11:05:41.362+09:00  INFO 43420 --- [url] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-31T11:05:41.462+09:00  INFO 43420 --- [url] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/url'
+2025-03-31T11:05:41.502+09:00  INFO 43420 --- [url] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka1:9092, kafka2:9093, kafka3:9094]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-short-url-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = short-url-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-03-31T11:05:41.552+09:00  INFO 43420 --- [url] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-03-31T11:05:41.655+09:00  INFO 43420 --- [url] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-03-31T11:05:41.655+09:00  INFO 43420 --- [url] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-03-31T11:05:41.655+09:00  INFO 43420 --- [url] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1743386741654
+2025-03-31T11:05:41.659+09:00  INFO 43420 --- [url] [restartedMain] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Subscribed to topic(s): short-url-topic
+2025-03-31T11:05:41.675+09:00  INFO 43420 --- [url] [restartedMain] kr.co.kst.url.UrlApplication             : Started UrlApplication in 7.137 seconds (process running for 9.85)
+2025-03-31T11:05:42.109+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Cluster ID: C7oAGy_aSfCX9U9M4DKo3A
+2025-03-31T11:05:42.110+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Discovered group coordinator kafka2:9093 (id: 2147483645 rack: null)
+2025-03-31T11:05:42.122+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] (Re-)joining group
+2025-03-31T11:05:42.151+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Request joining group due to: need to re-join with the given member-id: consumer-short-url-group-1-9fa9f6b4-fcd5-4f2a-b5bf-db2a259abf56
+2025-03-31T11:05:42.152+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] (Re-)joining group
+2025-03-31T11:05:45.162+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Successfully joined group with generation Generation{generationId=11, memberId='consumer-short-url-group-1-9fa9f6b4-fcd5-4f2a-b5bf-db2a259abf56', protocol='range'}
+2025-03-31T11:05:45.168+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Finished assignment for group at generation 11: {consumer-short-url-group-1-9fa9f6b4-fcd5-4f2a-b5bf-db2a259abf56=Assignment(partitions=[short-url-topic-0])}
+2025-03-31T11:05:45.184+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Successfully synced group in generation Generation{generationId=11, memberId='consumer-short-url-group-1-9fa9f6b4-fcd5-4f2a-b5bf-db2a259abf56', protocol='range'}
+2025-03-31T11:05:45.185+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Notifying assignor about the new Assignment(partitions=[short-url-topic-0])
+2025-03-31T11:05:45.188+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Adding newly assigned partitions: short-url-topic-0
+2025-03-31T11:05:45.207+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition short-url-topic-0 to the committed offset FetchPosition{offset=70130, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka1:9092 (id: 1 rack: null)], epoch=10}}
+2025-03-31T11:05:45.208+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : short-url-group: partitions assigned: [short-url-topic-0]
+2025-03-31T11:06:14.112+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Revoke previously assigned partitions short-url-topic-0
+2025-03-31T11:06:14.113+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : short-url-group: partitions revoked: [short-url-topic-0]
+2025-03-31T11:06:14.113+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Member consumer-short-url-group-1-9fa9f6b4-fcd5-4f2a-b5bf-db2a259abf56 sending LeaveGroup request to coordinator kafka2:9093 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2025-03-31T11:06:14.114+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-03-31T11:06:14.114+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Request joining group due to: consumer pro-actively leaving the group
+2025-03-31T11:06:14.114+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Unsubscribed all topics or patterns and assigned partitions
+2025-03-31T11:06:14.116+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-03-31T11:06:14.116+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Request joining group due to: consumer pro-actively leaving the group
+2025-03-31T11:06:14.543+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-03-31T11:06:14.543+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-03-31T11:06:14.544+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-03-31T11:06:14.544+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-03-31T11:06:14.553+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-short-url-group-1 unregistered
+2025-03-31T11:06:14.554+09:00  INFO 43420 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : short-url-group: Consumer stopped
+2025-03-31T11:06:14.556+09:00  INFO 43420 --- [url] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31T11:06:14.570+09:00  INFO 43420 --- [url] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-31T11:06:14.583+09:00  INFO 43420 --- [url] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-31T11:06:14.587+09:00  WARN 43420 --- [url] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-31T11:06:14.588+09:00  INFO 43420 --- [url] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-31T11:06:14.588+09:00  INFO 43420 --- [url] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-31T11:15:49.210+09:00  INFO 28000 --- [url] [restartedMain] kr.co.kst.url.UrlApplication             : Starting UrlApplication using Java 21.0.2 with PID 28000 (C:\kst\url\build\classes\java\main started by osstem in C:\kst\url)
+2025-03-31T11:15:49.214+09:00  INFO 28000 --- [url] [restartedMain] kr.co.kst.url.UrlApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-03-31T11:15:49.280+09:00  INFO 28000 --- [url] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-31T11:15:49.281+09:00  INFO 28000 --- [url] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-31T11:15:50.209+09:00  INFO 28000 --- [url] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-31T11:15:50.211+09:00  INFO 28000 --- [url] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-31T11:15:50.386+09:00  INFO 28000 --- [url] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 166 ms. Found 1 JPA repository interface.
+2025-03-31T11:15:50.409+09:00  INFO 28000 --- [url] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-31T11:15:50.410+09:00  INFO 28000 --- [url] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-31T11:15:50.431+09:00  INFO 28000 --- [url] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.kst.url.domain.ShortUrlRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-31T11:15:50.431+09:00  INFO 28000 --- [url] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-03-31T11:15:51.151+09:00  INFO 28000 --- [url] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-31T11:15:51.167+09:00  INFO 28000 --- [url] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-31T11:15:51.168+09:00  INFO 28000 --- [url] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-31T11:15:51.263+09:00  INFO 28000 --- [url] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/url]    : Initializing Spring embedded WebApplicationContext
+2025-03-31T11:15:51.264+09:00  INFO 28000 --- [url] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1983 ms
+2025-03-31T11:15:51.477+09:00  INFO 28000 --- [url] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-31T11:15:51.580+09:00  INFO 28000 --- [url] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-31T11:15:51.643+09:00  INFO 28000 --- [url] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-31T11:15:51.970+09:00  INFO 28000 --- [url] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-31T11:15:52.003+09:00  INFO 28000 --- [url] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-31T11:15:52.203+09:00  INFO 28000 --- [url] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-03-31T11:15:52.205+09:00  INFO 28000 --- [url] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-31T11:15:52.230+09:00  WARN 28000 --- [url] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-31T11:15:52.251+09:00  INFO 28000 --- [url] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-31T11:15:53.075+09:00  INFO 28000 --- [url] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-31T11:15:53.144+09:00  INFO 28000 --- [url] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-31T11:15:53.765+09:00  WARN 28000 --- [url] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-31T11:15:54.107+09:00  INFO 28000 --- [url] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-03-31T11:15:54.222+09:00  INFO 28000 --- [url] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-31T11:15:54.315+09:00  INFO 28000 --- [url] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/url'
+2025-03-31T11:15:54.363+09:00  INFO 28000 --- [url] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka1:9092, kafka2:9093, kafka3:9094]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-short-url-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = short-url-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-03-31T11:15:54.420+09:00  INFO 28000 --- [url] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-03-31T11:15:54.528+09:00  INFO 28000 --- [url] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-03-31T11:15:54.529+09:00  INFO 28000 --- [url] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-03-31T11:15:54.529+09:00  INFO 28000 --- [url] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1743387354527
+2025-03-31T11:15:54.533+09:00  INFO 28000 --- [url] [restartedMain] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Subscribed to topic(s): short-url-topic
+2025-03-31T11:15:54.553+09:00  INFO 28000 --- [url] [restartedMain] kr.co.kst.url.UrlApplication             : Started UrlApplication in 5.951 seconds (process running for 8.904)
+2025-03-31T11:15:54.800+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -2 disconnected.
+2025-03-31T11:15:54.802+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -2 (kafka2/127.0.0.1:9093) could not be established. Node may not be available.
+2025-03-31T11:15:54.802+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka2:9093 (id: -2 rack: null) disconnected
+2025-03-31T11:15:54.921+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -1 disconnected.
+2025-03-31T11:15:54.921+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -1 (kafka1/127.0.0.1:9092) could not be established. Node may not be available.
+2025-03-31T11:15:54.922+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka1:9092 (id: -1 rack: null) disconnected
+2025-03-31T11:15:54.930+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -3 disconnected.
+2025-03-31T11:15:54.931+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -3 (kafka3/127.0.0.1:9094) could not be established. Node may not be available.
+2025-03-31T11:15:54.931+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka3:9094 (id: -3 rack: null) disconnected
+2025-03-31T11:15:54.947+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -2 disconnected.
+2025-03-31T11:15:54.947+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -2 (kafka2/127.0.0.1:9093) could not be established. Node may not be available.
+2025-03-31T11:15:54.948+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka2:9093 (id: -2 rack: null) disconnected
+2025-03-31T11:15:55.013+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -1 disconnected.
+2025-03-31T11:15:55.014+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -1 (kafka1/127.0.0.1:9092) could not be established. Node may not be available.
+2025-03-31T11:15:55.014+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka1:9092 (id: -1 rack: null) disconnected
+2025-03-31T11:15:55.020+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -3 disconnected.
+2025-03-31T11:15:55.020+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -3 (kafka3/127.0.0.1:9094) could not be established. Node may not be available.
+2025-03-31T11:15:55.020+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka3:9094 (id: -3 rack: null) disconnected
+2025-03-31T11:15:55.082+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -2 disconnected.
+2025-03-31T11:15:55.082+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -2 (kafka2/127.0.0.1:9093) could not be established. Node may not be available.
+2025-03-31T11:15:55.082+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka2:9093 (id: -2 rack: null) disconnected
+2025-03-31T11:15:55.128+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -1 disconnected.
+2025-03-31T11:15:55.129+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -1 (kafka1/127.0.0.1:9092) could not be established. Node may not be available.
+2025-03-31T11:15:55.129+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka1:9092 (id: -1 rack: null) disconnected
+2025-03-31T11:15:55.133+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -3 disconnected.
+2025-03-31T11:15:55.133+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -3 (kafka3/127.0.0.1:9094) could not be established. Node may not be available.
+2025-03-31T11:15:55.133+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka3:9094 (id: -3 rack: null) disconnected
+2025-03-31T11:15:55.313+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -2 disconnected.
+2025-03-31T11:15:55.314+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -2 (kafka2/127.0.0.1:9093) could not be established. Node may not be available.
+2025-03-31T11:15:55.314+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka2:9093 (id: -2 rack: null) disconnected
+2025-03-31T11:15:55.327+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -1 disconnected.
+2025-03-31T11:15:55.328+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -1 (kafka1/127.0.0.1:9092) could not be established. Node may not be available.
+2025-03-31T11:15:55.328+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka1:9092 (id: -1 rack: null) disconnected
+2025-03-31T11:15:55.390+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -3 disconnected.
+2025-03-31T11:15:55.390+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -3 (kafka3/127.0.0.1:9094) could not be established. Node may not be available.
+2025-03-31T11:15:55.390+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka3:9094 (id: -3 rack: null) disconnected
+2025-03-31T11:15:55.714+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -2 disconnected.
+2025-03-31T11:15:55.714+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -2 (kafka2/127.0.0.1:9093) could not be established. Node may not be available.
+2025-03-31T11:15:55.714+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka2:9093 (id: -2 rack: null) disconnected
+2025-03-31T11:15:55.782+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -1 disconnected.
+2025-03-31T11:15:55.782+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -1 (kafka1/127.0.0.1:9092) could not be established. Node may not be available.
+2025-03-31T11:15:55.783+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka1:9092 (id: -1 rack: null) disconnected
+2025-03-31T11:15:55.797+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -3 disconnected.
+2025-03-31T11:15:55.797+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -3 (kafka3/127.0.0.1:9094) could not be established. Node may not be available.
+2025-03-31T11:15:55.797+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka3:9094 (id: -3 rack: null) disconnected
+2025-03-31T11:15:56.549+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -2 disconnected.
+2025-03-31T11:15:56.549+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -2 (kafka2/127.0.0.1:9093) could not be established. Node may not be available.
+2025-03-31T11:15:56.549+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka2:9093 (id: -2 rack: null) disconnected
+2025-03-31T11:15:56.557+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -3 disconnected.
+2025-03-31T11:15:56.557+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -3 (kafka3/127.0.0.1:9094) could not be established. Node may not be available.
+2025-03-31T11:15:56.557+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka3:9094 (id: -3 rack: null) disconnected
+2025-03-31T11:15:56.622+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -1 disconnected.
+2025-03-31T11:15:56.623+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -1 (kafka1/127.0.0.1:9092) could not be established. Node may not be available.
+2025-03-31T11:15:56.623+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka1:9092 (id: -1 rack: null) disconnected
+2025-03-31T11:15:57.596+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -2 disconnected.
+2025-03-31T11:15:57.596+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -2 (kafka2/127.0.0.1:9093) could not be established. Node may not be available.
+2025-03-31T11:15:57.596+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka2:9093 (id: -2 rack: null) disconnected
+2025-03-31T11:15:57.601+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -3 disconnected.
+2025-03-31T11:15:57.601+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -3 (kafka3/127.0.0.1:9094) could not be established. Node may not be available.
+2025-03-31T11:15:57.601+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka3:9094 (id: -3 rack: null) disconnected
+2025-03-31T11:15:57.657+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -1 disconnected.
+2025-03-31T11:15:57.658+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -1 (kafka1/127.0.0.1:9092) could not be established. Node may not be available.
+2025-03-31T11:15:57.658+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka1:9092 (id: -1 rack: null) disconnected
+2025-03-31T11:15:58.605+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -2 disconnected.
+2025-03-31T11:15:58.606+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -2 (kafka2/127.0.0.1:9093) could not be established. Node may not be available.
+2025-03-31T11:15:58.606+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka2:9093 (id: -2 rack: null) disconnected
+2025-03-31T11:15:58.611+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -3 disconnected.
+2025-03-31T11:15:58.611+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -3 (kafka3/127.0.0.1:9094) could not be established. Node may not be available.
+2025-03-31T11:15:58.611+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka3:9094 (id: -3 rack: null) disconnected
+2025-03-31T11:15:58.616+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -1 disconnected.
+2025-03-31T11:15:58.616+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -1 (kafka1/127.0.0.1:9092) could not be established. Node may not be available.
+2025-03-31T11:15:58.616+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka1:9092 (id: -1 rack: null) disconnected
+2025-03-31T11:15:59.511+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -2 disconnected.
+2025-03-31T11:15:59.511+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -2 (kafka2/127.0.0.1:9093) could not be established. Node may not be available.
+2025-03-31T11:15:59.511+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka2:9093 (id: -2 rack: null) disconnected
+2025-03-31T11:15:59.582+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -3 disconnected.
+2025-03-31T11:15:59.582+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -3 (kafka3/127.0.0.1:9094) could not be established. Node may not be available.
+2025-03-31T11:15:59.582+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka3:9094 (id: -3 rack: null) disconnected
+2025-03-31T11:15:59.698+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -1 disconnected.
+2025-03-31T11:15:59.698+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -1 (kafka1/127.0.0.1:9092) could not be established. Node may not be available.
+2025-03-31T11:15:59.699+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka1:9092 (id: -1 rack: null) disconnected
+2025-03-31T11:16:00.540+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -2 disconnected.
+2025-03-31T11:16:00.540+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -2 (kafka2/127.0.0.1:9093) could not be established. Node may not be available.
+2025-03-31T11:16:00.540+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka2:9093 (id: -2 rack: null) disconnected
+2025-03-31T11:16:00.602+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -3 disconnected.
+2025-03-31T11:16:00.602+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -3 (kafka3/127.0.0.1:9094) could not be established. Node may not be available.
+2025-03-31T11:16:00.602+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka3:9094 (id: -3 rack: null) disconnected
+2025-03-31T11:16:00.736+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -1 disconnected.
+2025-03-31T11:16:00.736+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -1 (kafka1/127.0.0.1:9092) could not be established. Node may not be available.
+2025-03-31T11:16:00.736+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka1:9092 (id: -1 rack: null) disconnected
+2025-03-31T11:16:01.514+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -3 disconnected.
+2025-03-31T11:16:01.515+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -3 (kafka3/127.0.0.1:9094) could not be established. Node may not be available.
+2025-03-31T11:16:01.515+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka3:9094 (id: -3 rack: null) disconnected
+2025-03-31T11:16:01.572+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -2 disconnected.
+2025-03-31T11:16:01.573+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -2 (kafka2/127.0.0.1:9093) could not be established. Node may not be available.
+2025-03-31T11:16:01.573+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka2:9093 (id: -2 rack: null) disconnected
+2025-03-31T11:16:01.759+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -1 disconnected.
+2025-03-31T11:16:01.759+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -1 (kafka1/127.0.0.1:9092) could not be established. Node may not be available.
+2025-03-31T11:16:01.759+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka1:9092 (id: -1 rack: null) disconnected
+2025-03-31T11:16:02.528+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -3 disconnected.
+2025-03-31T11:16:02.528+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -3 (kafka3/127.0.0.1:9094) could not be established. Node may not be available.
+2025-03-31T11:16:02.528+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka3:9094 (id: -3 rack: null) disconnected
+2025-03-31T11:16:02.598+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -2 disconnected.
+2025-03-31T11:16:02.599+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -2 (kafka2/127.0.0.1:9093) could not be established. Node may not be available.
+2025-03-31T11:16:02.599+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka2:9093 (id: -2 rack: null) disconnected
+2025-03-31T11:16:02.609+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -1 disconnected.
+2025-03-31T11:16:02.610+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -1 (kafka1/127.0.0.1:9092) could not be established. Node may not be available.
+2025-03-31T11:16:02.610+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka1:9092 (id: -1 rack: null) disconnected
+2025-03-31T11:16:03.451+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -3 disconnected.
+2025-03-31T11:16:03.451+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -3 (kafka3/127.0.0.1:9094) could not be established. Node may not be available.
+2025-03-31T11:16:03.451+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka3:9094 (id: -3 rack: null) disconnected
+2025-03-31T11:16:03.455+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -2 disconnected.
+2025-03-31T11:16:03.455+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -2 (kafka2/127.0.0.1:9093) could not be established. Node may not be available.
+2025-03-31T11:16:03.455+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka2:9093 (id: -2 rack: null) disconnected
+2025-03-31T11:16:03.636+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -1 disconnected.
+2025-03-31T11:16:03.636+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -1 (kafka1/127.0.0.1:9092) could not be established. Node may not be available.
+2025-03-31T11:16:03.636+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka1:9092 (id: -1 rack: null) disconnected
+2025-03-31T11:16:04.293+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -2 disconnected.
+2025-03-31T11:16:04.294+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -2 (kafka2/127.0.0.1:9093) could not be established. Node may not be available.
+2025-03-31T11:16:04.294+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka2:9093 (id: -2 rack: null) disconnected
+2025-03-31T11:16:04.427+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -3 disconnected.
+2025-03-31T11:16:04.427+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -3 (kafka3/127.0.0.1:9094) could not be established. Node may not be available.
+2025-03-31T11:16:04.427+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka3:9094 (id: -3 rack: null) disconnected
+2025-03-31T11:16:04.571+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Node -1 disconnected.
+2025-03-31T11:16:04.571+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Connection to node -1 (kafka1/127.0.0.1:9092) could not be established. Node may not be available.
+2025-03-31T11:16:04.571+09:00  WARN 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Bootstrap broker kafka1:9092 (id: -1 rack: null) disconnected
+2025-03-31T11:16:04.688+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-03-31T11:16:04.688+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Request joining group due to: consumer pro-actively leaving the group
+2025-03-31T11:16:04.688+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Unsubscribed all topics or patterns and assigned partitions
+2025-03-31T11:16:04.690+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-03-31T11:16:04.690+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-short-url-group-1, groupId=short-url-group] Request joining group due to: consumer pro-actively leaving the group
+2025-03-31T11:16:04.692+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-03-31T11:16:04.692+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-03-31T11:16:04.692+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-03-31T11:16:04.692+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-03-31T11:16:04.697+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-short-url-group-1 unregistered
+2025-03-31T11:16:04.697+09:00  INFO 28000 --- [url] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : short-url-group: Consumer stopped
+2025-03-31T11:16:04.698+09:00  INFO 28000 --- [url] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31T11:16:04.713+09:00  INFO 28000 --- [url] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-31T11:16:04.726+09:00  INFO 28000 --- [url] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-31T11:16:04.730+09:00  WARN 28000 --- [url] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-31T11:16:04.730+09:00  INFO 28000 --- [url] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-31T11:16:04.732+09:00  INFO 28000 --- [url] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-31T11:16:14.770+09:00  INFO 40392 --- [url] [restartedMain] kr.co.kst.url.UrlApplication             : Starting UrlApplication using Java 21.0.2 with PID 40392 (C:\kst\url\build\classes\java\main started by osstem in C:\kst\url)
+2025-03-31T11:16:14.772+09:00  INFO 40392 --- [url] [restartedMain] kr.co.kst.url.UrlApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-03-31T11:16:14.829+09:00  INFO 40392 --- [url] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-31T11:16:14.829+09:00  INFO 40392 --- [url] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-31T11:16:15.696+09:00  INFO 40392 --- [url] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-31T11:16:15.698+09:00  INFO 40392 --- [url] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-31T11:16:15.878+09:00  INFO 40392 --- [url] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 168 ms. Found 1 JPA repository interface.
+2025-03-31T11:16:15.895+09:00  INFO 40392 --- [url] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-31T11:16:15.896+09:00  INFO 40392 --- [url] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-31T11:16:15.912+09:00  INFO 40392 --- [url] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.kst.url.domain.ShortUrlRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-31T11:16:15.913+09:00  INFO 40392 --- [url] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-03-31T11:16:16.651+09:00  INFO 40392 --- [url] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-31T11:16:16.670+09:00  INFO 40392 --- [url] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-31T11:16:16.670+09:00  INFO 40392 --- [url] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-31T11:16:16.769+09:00  INFO 40392 --- [url] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/url]    : Initializing Spring embedded WebApplicationContext
+2025-03-31T11:16:16.770+09:00  INFO 40392 --- [url] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1940 ms
+2025-03-31T11:16:16.959+09:00  INFO 40392 --- [url] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-31T11:16:17.037+09:00  INFO 40392 --- [url] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-31T11:16:17.103+09:00  INFO 40392 --- [url] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-31T11:16:17.573+09:00  INFO 40392 --- [url] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-31T11:16:17.621+09:00  INFO 40392 --- [url] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-31T11:16:17.852+09:00  INFO 40392 --- [url] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-03-31T11:16:17.854+09:00  INFO 40392 --- [url] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-31T11:16:17.880+09:00  WARN 40392 --- [url] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-31T11:16:17.902+09:00  INFO 40392 --- [url] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-31T11:16:18.889+09:00  INFO 40392 --- [url] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-31T11:16:18.968+09:00  INFO 40392 --- [url] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-31T11:16:44.377+09:00  WARN 40392 --- [url] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-31T11:16:44.798+09:00  INFO 40392 --- [url] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-03-31T11:16:44.933+09:00  INFO 40392 --- [url] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-31T11:16:45.076+09:00  INFO 40392 --- [url] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/url'
+2025-03-31T11:16:45.136+09:00  INFO 40392 --- [url] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka1:9092, kafka2:9093, kafka3:9094]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-short-url-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = short-url-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-03-31T11:16:45.198+09:00  INFO 40392 --- [url] [restartedMain] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-03-31T11:16:47.930+09:00  WARN 40392 --- [url] [restartedMain] org.apache.kafka.clients.ClientUtils     : Couldn't resolve server kafka1:9092 from bootstrap.servers as DNS resolution failed for kafka1
+2025-03-31T11:16:50.623+09:00  WARN 40392 --- [url] [restartedMain] org.apache.kafka.clients.ClientUtils     : Couldn't resolve server kafka2:9093 from bootstrap.servers as DNS resolution failed for kafka2
+2025-03-31T11:16:53.325+09:00  WARN 40392 --- [url] [restartedMain] org.apache.kafka.clients.ClientUtils     : Couldn't resolve server kafka3:9094 from bootstrap.servers as DNS resolution failed for kafka3
+2025-03-31T11:16:53.327+09:00  INFO 40392 --- [url] [restartedMain] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-03-31T11:16:53.327+09:00  INFO 40392 --- [url] [restartedMain] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-03-31T11:16:53.327+09:00  INFO 40392 --- [url] [restartedMain] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-03-31T11:16:53.327+09:00  INFO 40392 --- [url] [restartedMain] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-03-31T11:16:53.329+09:00  INFO 40392 --- [url] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-short-url-group-1 unregistered
+2025-03-31T11:16:53.333+09:00  INFO 40392 --- [url] [restartedMain] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31T11:16:53.358+09:00  INFO 40392 --- [url] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-31T11:16:53.373+09:00  WARN 40392 --- [url] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'
+2025-03-31T11:16:53.390+09:00  INFO 40392 --- [url] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-31T11:16:53.397+09:00  WARN 40392 --- [url] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-31T11:16:53.397+09:00  INFO 40392 --- [url] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-31T11:16:53.399+09:00  INFO 40392 --- [url] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-31T11:16:53.414+09:00  INFO 40392 --- [url] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-31T11:16:53.445+09:00 ERROR 40392 --- [url] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:326) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:510) ~[spring-context-6.2.3.jar:6.2.3]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:295) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:240) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1006) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at kr.co.kst.url.UrlApplication.main(UrlApplication.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.3.jar:3.4.3]
+Caused by: org.apache.kafka.common.KafkaException: Failed to construct kafka consumer
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.<init>(LegacyKafkaConsumer.java:265) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.consumer.internals.ConsumerDelegateCreator.create(ConsumerDelegateCreator.java:65) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:600) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:595) ~[kafka-clients-3.8.1.jar:na]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory$ExtendedKafkaConsumer.<init>(DefaultKafkaConsumerFactory.java:498) ~[spring-kafka-3.3.3.jar:3.3.3]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createRawConsumer(DefaultKafkaConsumerFactory.java:453) ~[spring-kafka-3.3.3.jar:3.3.3]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createKafkaConsumer(DefaultKafkaConsumerFactory.java:430) ~[spring-kafka-3.3.3.jar:3.3.3]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createConsumerWithAdjustedProperties(DefaultKafkaConsumerFactory.java:407) ~[spring-kafka-3.3.3.jar:3.3.3]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createKafkaConsumer(DefaultKafkaConsumerFactory.java:374) ~[spring-kafka-3.3.3.jar:3.3.3]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createConsumer(DefaultKafkaConsumerFactory.java:335) ~[spring-kafka-3.3.3.jar:3.3.3]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.<init>(KafkaMessageListenerContainer.java:876) ~[spring-kafka-3.3.3.jar:3.3.3]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer.doStart(KafkaMessageListenerContainer.java:387) ~[spring-kafka-3.3.3.jar:3.3.3]
+	at org.springframework.kafka.listener.AbstractMessageListenerContainer.start(AbstractMessageListenerContainer.java:520) ~[spring-kafka-3.3.3.jar:3.3.3]
+	at org.springframework.kafka.listener.ConcurrentMessageListenerContainer.doStart(ConcurrentMessageListenerContainer.java:264) ~[spring-kafka-3.3.3.jar:3.3.3]
+	at org.springframework.kafka.listener.AbstractMessageListenerContainer.start(AbstractMessageListenerContainer.java:520) ~[spring-kafka-3.3.3.jar:3.3.3]
+	at org.springframework.kafka.config.KafkaListenerEndpointRegistry.startIfNecessary(KafkaListenerEndpointRegistry.java:436) ~[spring-kafka-3.3.3.jar:3.3.3]
+	at org.springframework.kafka.config.KafkaListenerEndpointRegistry.start(KafkaListenerEndpointRegistry.java:382) ~[spring-kafka-3.3.3.jar:3.3.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:323) ~[spring-context-6.2.3.jar:6.2.3]
+	... 16 common frames omitted
+Caused by: org.apache.kafka.common.config.ConfigException: No resolvable bootstrap urls given in bootstrap.servers
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:103) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:62) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:58) ~[kafka-clients-3.8.1.jar:na]
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.<init>(LegacyKafkaConsumer.java:184) ~[kafka-clients-3.8.1.jar:na]
+	... 33 common frames omitted
+
