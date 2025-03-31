@@ -18,6 +18,11 @@ public class UrlController {
         this.queryService = queryService;
     }
 
+    @GetMapping("text")
+    public ResponseEntity<String> test(){
+        return ResponseEntity.ok("success");
+    }
+
     @GetMapping("get")
     public ResponseEntity<String> get(@RequestParam String code) {
         ShortUrl shortUrl = queryService.getUrlByCode(code);
