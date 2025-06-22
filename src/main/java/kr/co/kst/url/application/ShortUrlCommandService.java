@@ -24,6 +24,7 @@ public class ShortUrlCommandService {
     public ShortUrlResponse create(String url) {
 
         ShortUrl shortUrl = ShortUrl.create(idGenerator, url);
+        ㄴ어린ㅇ
 
         kafkaTemplate.send("short-url-topic", new ShortUrlMessage(shortUrl.getCode(), url));
         String result = DOMAIN + "/" + shortUrl.getCode();
