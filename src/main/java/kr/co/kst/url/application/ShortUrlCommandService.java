@@ -12,16 +12,16 @@ import org.springframework.stereotype.Service;
 public class ShortUrlCommandService {
 
     private static final String DOMAIN = "https://short.ly";
-
-
     private final KafkaTemplate<String, KafkaBaseMessage> kafkaTemplate;
+    private final SnowflakeIdGenerator idGenerator;
 
-    public ShortUrlCommandService(KafkaTemplate<String, KafkaBaseMessage> kafkaTemplate) {
+
+    public ShortUrlCommandService(KafkaTemplate<String, KafkaBaseMessage> kafkaTemplate, SnowflakeIdGenerator snowflakeIdGenerator) {
         this.kafkaTemplate = kafkaTemplate;
+        this.idGenerator = snowflakeIdGenerator;
     }
 
     public ShortUrlResponse create(String url) {
-        SnowflakeIdGenerator idGenerator = new SnowflakeIdGenerator(1,1);
 
         ShortUrl shortUrl = ShortUrl.create(idGenerator, url);
 
